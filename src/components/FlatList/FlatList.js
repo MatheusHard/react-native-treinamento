@@ -5,6 +5,8 @@ import styled from 'styled-components/native';
 import array from '../../utils/array'; 
 import AddItem from './AddItem';
 import ItemFlatList from './ItemFlatList';
+import { SwipeListView } from 'react-native-swipe-list-view'; 
+import ListaItemSwipe from './ListaItemSwipe';
 
  const Page = styled.SafeAreaView`
     flex: 1;`;
@@ -38,12 +40,21 @@ const togleDone = (index) => {
     newItems[index].status = !newItems[index].status;
     setItems(newItems); 
 }
+const deleteItem = (index) => {
+let newItems = [...items];
+//filter receber no array apenas os q derem verdadeiro:
+newItems = newItems.filter((it, i)=> i != index);
+setItems(newItems);
+}
     return (
         <Page>
             <AddItem onAdd={addNewItem}/>
-            <FlatList
+            <SwipeListView
             data={items}
             renderItem={({item, index})=><ItemFlatList onPress={()=>togleDone(index)} data={item}/>}
+            renderHiddenItem={({item, index})=><ListaItemSwipe onDelete={()=>deleteItem(index)}/>} 
+            leftOpenValue={50}
+            disableLeftSwipe={true}
             />
         </Page> 
     );

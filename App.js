@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import styled from 'styled-components/native';
 
 import AlertComponent from './src/components/AlertComponent';
+import AsyncStorage from './src/components/AsyncStorage';
 import ContaPaga from './src/components/ContaPaga';
 import FlatList from './src/components/FlatList/FlatList';
 import Image from './src/components/Image';
@@ -18,8 +19,9 @@ align-items: center;
 export default () =>{
 
   return(
-    <FlatList/>
-    /*
+    <AsyncStorage/>
+    /*<FlatList/>
+    
     <ListView/>
     <Page>
        <AlertComponent/> 

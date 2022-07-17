@@ -8,10 +8,13 @@ import styled from 'styled-components/native';
    
     
 
-const Item = styled.TouchableOpacity`
-padding: 10px;
+const Item = styled.TouchableHighlight`
 background-color: #CCC;
-flex-direction: row;`
+flex-direction: row;
+height: 50px;
+padding-left: 20px;
+padding-right: 20px;
+align-items: center;`
 ;
 
     const ItemText= styled.Text`
@@ -29,7 +32,7 @@ flex-direction: row;`
 export default (props) => {
    
         return (
-                <Item onPress={props.onPress} activeOpacity={0.8}>
+                <Item onPress={props.onPress} activeOpacity={1} underlayColor="#CCC">
                     <>
                         <ItemText> {`Nome: ${props.data.nome} ${props.data.status}`}</ItemText>
                         <ItemText> {`Idade: ${props.data.age}`}</ItemText>
