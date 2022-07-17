@@ -2,30 +2,10 @@
 
 export default [
   
-    {"nome": "Matheus", "age": 50},
-    {"nome": "Lolo", "age": 44},
-    {"nome": "Olho de BOto", "age": 80},
-    {"nome": "Maozinha", "age": 38},
-    {"nome": "Matheus", "age": 50},
-    {"nome": "Lolo", "age": 44},
-    {"nome": "Olho de BOto", "age": 80},
-    {"nome": "Maozinha", "age": 38},
-    {"nome": "Matheus", "age": 50},
-    {"nome": "Lolo", "age": 44},
-    {"nome": "Olho de BOto", "age": 80},
-    {"nome": "Maozinha", "age": 38},
-    {"nome": "Matheus", "age": 50},
-    {"nome": "Lolo", "age": 44},
-    {"nome": "Olho de BOto", "age": 80},
-    {"nome": "Maozinha", "age": 38},
-    {"nome": "Matheus", "age": 50},
-    {"nome": "Lolo", "age": 44},
-    {"nome": "Olho de BOto", "age": 80},
-    {"nome": "Maozinha", "age": 38},
-    {"nome": "Matheus", "age": 50},
-    {"nome": "Lolo", "age": 44},
-    {"nome": "Olho de BOto", "age": 80},
-    {"nome": "Maozinha", "age": 38}
 
-
+    {id: 1,  nome: "Matheus", age: 50, status: false},
+    {id: 2,  nome: "Luna", age: 60, status: false},
+    {id: 3,  nome: "Izabel", age: 11, status: false},
+    {id: 4,  nome: "Luiz", age: 5,status: false}
+   
 ];

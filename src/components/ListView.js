@@ -36,7 +36,7 @@ export default () => {
             <Scrow>
                 {array.map((item, index) =>{
                    return ( 
-                   <Item key={index}  onPress={()=>{}} activeOpacity={0.8}>
+                   <Item key={item.id}  onPress={()=>{}} activeOpacity={0.8}>
                        
                         
                         <ItemText> {`Nome: ${item.nome}`}`</ItemText>
