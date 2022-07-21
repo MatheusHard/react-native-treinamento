@@ -8,7 +8,9 @@ import ContaPaga from './src/components/ContaPaga';
 import FlatList from './src/components/FlatList/FlatList';
 import Image from './src/components/Image';
 import ListView from './src/components/ListView';
+import Modal from './src/components/Modal';
 import Header from './src/header/Header';
+import PostApi from './src/components/CrudApi/Post';
 
 const Page = styled.SafeAreaView`
 flex: 1;
@@ -19,8 +21,11 @@ align-items: center;
 export default () =>{
 
   return(
+    <PostApi/>
+    /*<Movies/>
+    <Modal/>
     <AsyncStorage/>
-    /*<FlatList/>
+    <FlatList/>
     
     <ListView/>
     <Page>
