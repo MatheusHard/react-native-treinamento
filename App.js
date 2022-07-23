@@ -11,6 +11,9 @@ import ListView from './src/components/ListView';
 import Modal from './src/components/Modal';
 import Header from './src/header/Header';
 import PostApi from './src/components/CrudApi/Post';
+import LoginSimpless from './src/components/LoginSimples';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 const Page = styled.SafeAreaView`
 flex: 1;
@@ -21,8 +24,9 @@ align-items: center;
 export default () =>{
 
   return(
-    <PostApi/>
-    /*<Movies/>
+    <LoginSimpless/>
+    /*<PostApi/>
+    <Movies/>
     <Modal/>
     <AsyncStorage/>
     <FlatList/>
